@@ -1,0 +1,8 @@
+-- TradeTower | Script by 'j#0001
+
+--local SupportedGames = {
+--    Trade Tower | Autoclicker, Autoupgrade, Autocase // AntiAFK, Rejoin, Fly
+--    Skate Park | Credits Autofarm // AntiAFK, Rejoin, Fly(broken)
+--}
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/laderite/scripts/main/trade%20tower')))()

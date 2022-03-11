@@ -1,0 +1,55 @@
+local Holder = {};
+local Camera = workspace.CurrentCamera;
+local LocalPlayer = game:GetService("Players").LocalPlayer;
+local RunService = game:GetService("RunService");
+local function OnAdded(Part)
+    if Part.Name ~= "Trigger" then return; end
+    if not LocalPlayer.Character then
+        LocalPlayer.CharacterAdded:Wait();
+    end
+    local RootPart = LocalPlayer.Character:WaitForChild("HumanoidRootPart");
+    local Magnitude = (RootPart.Position - Part.Position).Magnitude;
+    local H = workspace:FindPartOnRayWithWhitelist(Ray.new(Part.Position, RootPart.Position - Part.Position), {workspace.Map}, true);
+    local Damage0 = 250;
+    local Damage1 = 15;
+    local Range0 = 8;
+    local Range1 = 30;
+    local Dmg = Magnitude < Range0 and Damage0 or (Magnitude < Range1 and (Damage1 - Damage0) / (Range1 - Range0) * (Magnitude - Range0) + Damage0 or Damage1);
+    local Letal = Magnitude < 30 and not H;
+    local Name = Drawing.new("Text");
+    Name.Visible = true;
+    Name.Text = string.format("[NADE: %s studs]\n[Lethal: %s]\n[Damage: %s]", tostring(math.floor(Magnitude)), tostring(Letal), (not Letal and "NONE" or Dmg));
+    Name.Size = math.clamp(1 / Magnitude * 1000, 10, 30);
+    Name.Font = 3;
+    Name.Outline = true;
+    Name.Color = Color3.new(0.984313, 1, 0.043137);
+    Holder[Part] = Name;
+    local MainCon, HeExploded;
+    MainCon = RunService.RenderStepped:Connect(function()
+        if not Part.Parent or Part.Parent ~= workspace.Ignore.Misc then return; end
+        Magnitude = (RootPart.Position - Part.Position).Magnitude;
+        H = workspace:FindPartOnRayWithWhitelist(Ray.new(Part.Position, RootPart.Position - Part.Position), {workspace.Map}, true);
+        Dmg = Magnitude < Range0 and Damage0 or (Magnitude < Range1 and (Damage1 - Damage0) / (Range1 - Range0) * (Magnitude - Range0) + Damage0 or Damage1);
+        Letal = Magnitude < 30 and not H;
+        local Pos, OnScreen = Camera:WorldToViewportPoint(Part.Position);
+        Name.Visible = OnScreen;
+        if OnScreen then
+            Name.Position = Vector2.new(Pos.X, Pos.Y);
+            Name.Text = string.format("[NADE: %s studs]\n[Lethal: %s]\n[Damage: %s]", tostring(math.floor(Magnitude)), tostring(Letal), (not Letal and "NONE" or Dmg));
+        end
+    end);
+    HeExploded = Part:GetPropertyChangedSignal("Parent"):Connect(function()
+        if not Part.Parent or Part.Parent ~= workspace.Ignore.Misc then
+            MainCon:Disconnect();
+            Name:Destroy();
+            HeExploded:Disconnect();
+        end
+    end);
+end
+workspace.Ignore.Misc.ChildAdded:Connect(OnAdded);
+workspace.Ignore.Misc.ChildRemoved:Connect(function(Part)
+    if Holder[Part] then
+        Holder[Part]:Remove();
+        Holder[Part] = nil;
+    end
+end);

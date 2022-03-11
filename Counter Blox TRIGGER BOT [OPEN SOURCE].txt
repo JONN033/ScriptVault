@@ -1,0 +1,20 @@
+local Mouse = game.Players.LocalPlayer:GetMouse()
+while true do
+wait()
+pcall(function()
+for i,v in pairs(game.Players:GetPlayers()) do  
+if v ~= game.Players.LocalPlayer and v.Character and v.Team ~= game.Players.LocalPlayer.Team and v.Character.Humanoid.Health > 0 then
+if game.ReplicatedStorage.Weapons[game.Players.LocalPlayer.Character.EquippedTool.Value]:FindFirstChild('Chamber') then
+return
+end
+if Mouse.Target == v.Character.HeadHB or Mouse.Target == v.Character.HumanoidRootPart or Mouse.Target == v.Character.LeftHand or Mouse.Target == v.Character.LeftLowerArm or Mouse.Target == v.Character.LeftUpperArm or Mouse.Target == v.Character.RightHand or Mouse.Target == v.Character.RightLowerArm or Mouse.Target == v.Character.RightUpperArm or Mouse.Target == v.Character.UpperTorso or Mouse.Target == v.Character.LeftFoot or Mouse.Target == v.Character.LeftLowerLeg or Mouse.Target == v.Character.LeftUpperLeg or Mouse.Target == v.Character.RightFoot or Mouse.Target == v.Character.RightLowerLeg or Mouse.Target == v.Character.RightUpperLeg or Mouse.Target == v.Character.LowerTorso then
+local Cooldown = game.ReplicatedStorage.Weapons[game.Players.LocalPlayer.Character.EquippedTool.Value].FireRate.Value
+local Client = game.Players.LocalPlayer.PlayerGui.Client
+getsenv(Client).firebullet()
+print(v.Name)
+wait(Cooldown)
+end
+end
+end
+end)
+end

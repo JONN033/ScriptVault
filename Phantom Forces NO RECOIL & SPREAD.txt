@@ -1,0 +1,8 @@
+c = hookfunction(getrenv().math.random, newcclosure(function(a, b, ...)
+    if a and b then
+        b = a
+    else
+        return 0
+    end
+    return c(a, b, ...)
+end))

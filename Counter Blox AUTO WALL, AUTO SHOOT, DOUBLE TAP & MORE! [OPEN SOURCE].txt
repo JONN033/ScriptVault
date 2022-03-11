@@ -1,0 +1,12 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/venosu/sexware/main/sexware.lua', true))()
+[/b]
+
+[b]--[[
+//
+
+newcclosure was here
+if you delete this you gay
+give credit
+
+\\
+]]

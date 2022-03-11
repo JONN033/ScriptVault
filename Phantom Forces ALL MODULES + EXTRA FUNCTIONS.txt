@@ -1,0 +1,228 @@
+local network
+local camera
+local char
+local hud
+local physics
+local vector
+local PublicSettings
+local ragdolls
+local roundsystem
+local cframe
+local screencull
+local animation
+local input
+local uiscaler
+local sound
+local ModifyData
+local GunDataGetter
+local console
+local announce
+local chat
+local deploy
+local respawn
+local falldamage
+local suicide
+local newchat
+local chat
+local getammo
+local updateammo
+
+function len(p1)
+    local v1 = 0
+    for _, _ in pairs(p1) do
+        v1 = v1 + 1
+    end
+    return v1
+end
+do
+    physics = {}
+    chat = {}
+    for i, v in next, getgc(true) do
+        if
+            typeof(v) == "function" and getfenv(v).script and
+                getfenv(v).script == game:GetService("ReplicatedFirst").Framework
+         then
+            for i2, v2 in next, debug.getupvalues(v) do
+                if typeof(v2) == "table" then
+                    if rawget(v2, "send") then
+                        if not network then
+                            network = v2
+                        end
+                    elseif rawget(v2, "animstep") then
+                        if not char then
+                            char = v2
+                        end
+                    elseif rawget(v2, "currentcamera") then
+                        if not camera then
+                            camera = v2
+                        end
+                    elseif rawget(v2, "firehitmarker") then
+                        if not hud then
+                            hud = v2
+                        end
+                    elseif rawget(v2, "toanglesyx") then
+                        if not vector then
+                            vector = v2
+                        end
+                    elseif rawget(v2, "bulletAcceleration") then
+                        if not PublicSettings then
+                            PublicSettings = v2
+                        end
+                    elseif rawget(v2, "getplayerhit") then
+                        if not ragdolls then
+                            ragdolls = v2
+                        end
+                    elseif rawget(v2, "raycastwhitelist") then
+                        if not roundsystem then
+                            roundsystem = v2
+                        end
+                    elseif rawget(v2, "interpolator") then
+                        if not cframe then
+                            cframe = v2
+                        end
+                    elseif rawget(v2, "sphere") then
+                        if not screencull then
+                            screencull = v2
+                        end
+                    elseif rawget(v2, "reset") and rawget(v2, "player") then
+                        if not animation then
+                            animation = v2
+                        end
+                    elseif rawget(v2, "iskeydown") and rawget(v2, "keyboard") then
+                        if not input then
+                            input = v2
+                        end
+                    elseif rawget(v2, "reload") and rawget(v2, "disable1pcamoskins") then
+                        if not effects then
+                            effects = v2
+                        end
+                    elseif rawget(v2, "getscale") and rawget(v2, "setscale") then
+                        if not uiscaler then
+                            uiscaler = v2
+                        end
+                    elseif rawget(v2, "IsVIP") then
+                        if not InstanceType then
+                            InstanceType = v2
+                        end
+                    elseif rawget(v2, "materialhitsound") and rawget(v2, "play") then
+                        if not sound then
+                            sound = v2
+                        end
+                    end
+                elseif typeof(v2) == "function" then
+                    if debug.getinfo(v2).name == "trajectory" then
+                        physics["trajectory"] = v2
+                    elseif debug.getinfo(v2).name == "loadgun" then
+                        ModifyData = debug.getupvalue(v2, 1)
+                    end
+                end
+            end
+        elseif typeof(v) == "function" and islclosure(v) then
+            if debug.getinfo(v).name == "deploy" then
+                deploy = v
+            elseif debug.getinfo(v).name == "respawn" then
+                respawn = v
+            else
+                if #debug.getconstants(v) >= 21 then
+                    for i2,v2 in next, debug.getconstants(v) do
+                        if tostring(v2) == "modcmd" then
+                            function chat:setTimeout(p1)
+                               debug.setupvalue(v, 7, p1)
+                            end
+                            function chat:setWarnings(p1)
+                               debug.setupvalue(v, 9, p1)
+                            end
+                            newchat = function(p1, p2)
+                               network:send("chatted", p1, p2);
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+do
+    game:GetService("ReplicatedFirst"):WaitForChild("SharedModules")
+
+    GunDataGetter = function()
+        local function equippedWeapon()
+            for k, v in pairs(workspace.CurrentCamera:GetChildren()) do
+                if tostring(v) ~= "Left Arm" and tostring(v) ~= "Right Arm" then
+                    return v.Name
+                end
+            end
+            return nil
+        end
+        if game:GetService("ReplicatedStorage").GunModules:FindFirstChild(equippedWeapon()) then
+            return require(game:GetService("ReplicatedStorage").GunModules:FindFirstChild(equippedWeapon()))
+        end
+        return nil
+    end
+
+    falldamage = function(p1)
+        network:send("falldamage", p1)
+    end
+
+    suicide = function()
+        falldamage(1000)
+    end
+
+    local AmmoContainingC
+    local TemporaryFakeAmmo
+
+    for i, v in next, getgc() do
+   if islclosure(v) and debug.getinfo(v).name ~= "step" then
+   for i2, v2 in next, getupvalues(v) do
+   if tonumber(v2) then
+   if i2 == 43 then
+   AmmoContainingC = v
+   end
+   end
+   end
+   end
+   end
+
+    getammo = function()
+      if AmmoContainingC then
+         local upvalue = debug.getupvalue(AmmoContainingC, 43)
+         if not upvalue then return TemporaryFakeAmmo or 0 end
+         return upvalue
+      else
+         return TemporaryFakeAmmo or 0
+      end
+    end
+
+    updateammo = function()
+      if AmmoContainingC then
+          setupvalue(AmmoContainingC, 43, getammo() + 1 + TemporaryFakeAmmo)
+          TemporaryFakeAmmo = 0
+      else
+          TemporaryFakeAmmo = TemporaryFakeAmmo + 1
+      end
+    end
+
+    console = function(p17, p18, p19)
+        local v47 = game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("ChatGame")
+        local u10 = v47:WaitForChild("GlobalChat")
+
+        local u8 = game.ReplicatedStorage.Misc:WaitForChild("MsgerMain")
+        local v51 = u8:Clone()
+        local v52 = v51:WaitForChild("Tag")
+        v51.Text = (p17 ~= nil) and "[" .. tostring(p17) .. "]: " or "[Console]: "
+        v51.TextColor3 = p19 or Color3.new(0.4, 0.4, 0.4)
+        v51.Msg.Text = p18
+        v51.Parent = u10
+        v51.Msg.Position = UDim2.new(0, v51.TextBounds.x, 0, 0)
+    end
+
+    announce = function(p19)
+        local v47 = game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("ChatGame")
+        local u10 = v47:WaitForChild("GlobalChat")
+
+        local u8 = game.ReplicatedStorage.Misc:WaitForChild("MsgerMain")
+        local v53 = u8:Clone()
+        local v52 = v53:WaitForChild("Tag")
+        v53.Text = "[ANNOUNCEMENT]: "
+        v53.TextColor3 = Color3.new(0.9803921568627451, 0.6509803921568628, 0.10196078431372549)
+        v53.Msg.Text = p19

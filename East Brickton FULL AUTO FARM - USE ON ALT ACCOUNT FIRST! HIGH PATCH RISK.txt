@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IlIlIllIIlI/Scripts/main/EastBricktonAutofarm.lua", true))()

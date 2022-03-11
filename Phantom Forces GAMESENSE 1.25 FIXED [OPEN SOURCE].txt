@@ -1,0 +1,10 @@
+--[[
+    This script was created by shawnjbragdon#0001.
+    If you are going to re-release this, please leave the credit.
+
+    https://v3rmillion.net/member.php?action=profile&uid=1870134
+
+    This script was made using Synapse X.
+]]
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Luminential/releases/main/gamesense.luau", true))()

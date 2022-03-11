@@ -1,0 +1,47 @@
+local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))() -- It's obfuscated, I won't let you see my ugly coding skills. =)
+
+local w = library:CreateWindow("Ph and Aresnal")
+
+local b = w:CreateFolder("Main Functions")
+
+b:Label("Credits: V3RMillion-Banckielol03, Discord-mario1234#6807",Color3.fromRGB(38,38,38),Color3.fromRGB(100, 149, 237))
+
+b:Toggle("AutoFarm",function(bool)
+   if bool then
+       wait(5)
+       getgenv().AutoFarm = true
+       local camera = game.Workspace.CurrentCamera
+       function getClosest()
+           local closestdistance = math.huge
+           local ClosetPlayer = nil
+           for i,v in pairs(game.Players:GetChildren()) do
+               if v ~= game.Players.LocalPlayer and v.Team ~= game.Players.LocalPlayer.Team then
+                   local distance = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Character.HumanoidRootPart.Position).magnitude
+                   if distance < closestdistance then
+                       closestdistance = distance
+                       ClosetPlayer = v
+                   end
+               end
+           end
+           return ClosetPlayer
+       end
+
+       game:GetService("RunService").Stepped:connect(function()
+           if getgenv().AutoFarm == true then
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = getClosest().Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 4)
+           camera.CFrame = CFrame.new(camera.CFrame.Position, getClosest().Character.Head.Position)
+           mouse1press()
+           wait()
+           mouse1release()
+           keypress(0x52)
+           end
+       end)
+   else
+       print("Stopped")
+       getgenv().AutoFarm = false
+   end
+end)
+
+b:DestroyGUI()
+
+b:GuiSettings() 

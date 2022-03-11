@@ -1,0 +1,56 @@
+-- Require
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
+local venyx = library.new("Venyx", 5013109572)
+
+-- Theme
+local themes = {
+Background = Color3.fromRGB(24, 24, 24),
+Glow = Color3.fromRGB(0, 0, 0),
+Accent = Color3.fromRGB(10, 10, 10),
+LightContrast = Color3.fromRGB(20, 20, 20),
+DarkContrast = Color3.fromRGB(14, 14, 14),  
+TextColor = Color3.fromRGB(255, 255, 255)
+}
+
+-- Pages/Sections
+local ToP = venyx:addPage("Tower of Pog", 5012544693)
+local MF = ToP:addSection("Main Features")
+local WT = ToP:addSection("Too EZ")
+local me = game.Players.LocalPlayer.Name
+
+-- Notification
+venyx:Notify("Notification", "This script was created by Monkey God @ V3rmillion.net", function()
+end)
+
+--Custom Stuff
+game:GetService("Workspace")[me].currentSection.Value = 6969
+workspace.Gravity = 147.14999999999998
+
+-- Functions
+MF:addToggle("Time Freeze", false, function(value)
+game:GetService("Players").LocalPlayer.PlayerScripts.timefreeze.Value = value
+end)
+
+MF:addSlider("Walkspeed", 16, 16, 100, function(value)
+game:GetService("ReplicatedStorage").globalSpeed.Value = value
+end)
+
+MF:addButton("Infinite Double Jumps", function()
+game:GetService("ReplicatedStorage").globalJumps.Value = 6969
+end)
+
+WT:addButton("Invincibility", function()
+    for i,v in pairs(game:GetService("Workspace")[me]:GetChildren()) do
+        if v.Name == "hitbox" then
+            v:ClearAllChildren()
+        end
+    end
+end)
+
+WT:addButton("Teleport to End", function()
+for i,v in pairs(game:GetService("Workspace").tower.sections.finish:GetChildren()) do
+    if v.Name == "FinishGlow" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+    end
+end
+end)

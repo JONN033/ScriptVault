@@ -1,0 +1,946 @@
+--Made by our lovely owner, MrFlipPhone!
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(39, 65, 125)
+TextLabel.Position = UDim2.new(0.39641434, 0, 0.301549464, 0)
+TextLabel.Size = UDim2.new(0, 390, 0, 330)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "The fusionic hub will load up shortly: Buy fusionic at https://discord.gg/UqraN7g Made by MrFlipPhone#5576 "
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = ScreenGui
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(24, 40, 65)
+TextLabel_2.Position = UDim2.new(0.39641434, 0, 0.28605479, 0)
+TextLabel_2.Size = UDim2.new(0, 390, 0, 67)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Fusionic's Hub"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+wait(15)
+ScreenGui:Destroy()
+local ScreenGui = Instance.new("ScreenGui")
+local _1 = Instance.new("ImageLabel")
+local _1_2 = Instance.new("ImageLabel")
+local _2 = Instance.new("ImageLabel")
+local _2_2 = Instance.new("ImageLabel")
+local _3 = Instance.new("ImageLabel")
+local _3_2 = Instance.new("ImageLabel")
+local _3God = Instance.new("ImageButton")
+local TextLabel = Instance.new("TextLabel")
+local _3Unanchorall = Instance.new("ImageButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local _2Headshake = Instance.new("ImageButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local _2Executor = Instance.new("ImageButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local _2Invisible = Instance.new("ImageButton")
+local TextLabel_5 = Instance.new("TextLabel")
+local _2Flood = Instance.new("ImageButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local _2Killall = Instance.new("ImageButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local _1Heal = Instance.new("ImageButton")
+local TextLabel_8 = Instance.new("TextLabel")
+local _1Jump = Instance.new("ImageButton")
+local TextLabel_9 = Instance.new("TextLabel")
+local _1Speed = Instance.new("ImageButton")
+local TextLabel_10 = Instance.new("TextLabel")
+local Circle1 = Instance.new("ImageLabel")
+local Circle2 = Instance.new("ImageLabel")
+local Circle3 = Instance.new("ImageLabel")
+local _1st = Instance.new("TextLabel")
+local _2nd = Instance.new("TextLabel")
+local _3rd = Instance.new("TextLabel")
+local _3Terrain = Instance.new("ImageButton")
+local TextLabel_11 = Instance.new("TextLabel")
+local _3Clearworkspace = Instance.new("ImageButton")
+local TextLabel_12 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+_1.Name = "1"
+_1.Parent = ScreenGui
+_1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1.BackgroundTransparency = 1.000
+_1.Position = UDim2.new(0.0880909413, -125, 0.0471990556, -25)
+_1.Selectable = true
+_1.Size = UDim2.new(0, 145, 0, 268)
+_1.Image = "rbxassetid://605740338"
+_1.ImageColor3 = Color3.fromRGB(24, 40, 65)
+_1.ScaleType = Enum.ScaleType.Slice
+_1.SliceCenter = Rect.new(24, 24, 216, 216)
+
+_1_2.Name = "1"
+_1_2.Parent = ScreenGui
+_1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1_2.BackgroundTransparency = 1.000
+_1_2.Position = UDim2.new(0.0880909413, -125, 0.0471990556, -25)
+_1_2.Selectable = true
+_1_2.Size = UDim2.new(0, 145, 0, 47)
+_1_2.Image = "rbxassetid://605740338"
+_1_2.ImageColor3 = Color3.fromRGB(17, 29, 48)
+_1_2.ScaleType = Enum.ScaleType.Slice
+_1_2.SliceCenter = Rect.new(24, 24, 216, 216)
+
+_2.Name = "2"
+_2.Parent = ScreenGui
+_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_2.BackgroundTransparency = 1.000
+_2.Position = UDim2.new(0.188454285, -125, 0.0471990556, -25)
+_2.Selectable = true
+_2.Size = UDim2.new(0, 145, 0, 415)
+_2.Image = "rbxassetid://605740338"
+_2.ImageColor3 = Color3.fromRGB(24, 40, 65)
+_2.ScaleType = Enum.ScaleType.Slice
+_2.SliceCenter = Rect.new(24, 24, 216, 216)
+
+_2_2.Name = "2"
+_2_2.Parent = ScreenGui
+_2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_2_2.BackgroundTransparency = 1.000
+_2_2.Position = UDim2.new(0.188454285, -125, 0.0471990556, -25)
+_2_2.Selectable = true
+_2_2.Size = UDim2.new(0, 145, 0, 47)
+_2_2.Image = "rbxassetid://605740338"
+_2_2.ImageColor3 = Color3.fromRGB(17, 29, 48)
+_2_2.ScaleType = Enum.ScaleType.Slice
+_2_2.SliceCenter = Rect.new(24, 24, 216, 216)
+
+_3.Name = "3"
+_3.Parent = ScreenGui
+_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_3.BackgroundTransparency = 1.000
+_3.Position = UDim2.new(0.291001797, -125, 0.0471990556, -25)
+_3.Selectable = true
+_3.Size = UDim2.new(0, 145, 0, 348)
+_3.Image = "rbxassetid://605740338"
+_3.ImageColor3 = Color3.fromRGB(24, 40, 65)
+_3.ScaleType = Enum.ScaleType.Slice
+_3.SliceCenter = Rect.new(24, 24, 216, 216)
+
+_3_2.Name = "3"
+_3_2.Parent = ScreenGui
+_3_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_3_2.BackgroundTransparency = 1.000
+_3_2.Position = UDim2.new(0.291001797, -125, 0.0471990556, -25)
+_3_2.Selectable = true
+_3_2.Size = UDim2.new(0, 145, 0, 47)
+_3_2.Image = "rbxassetid://605740338"
+_3_2.ImageColor3 = Color3.fromRGB(17, 29, 48)
+_3_2.ScaleType = Enum.ScaleType.Slice
+_3_2.SliceCenter = Rect.new(24, 24, 216, 216)
+
+_3God.Name = "(3) God"
+_3God.Parent = ScreenGui
+_3God.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_3God.BackgroundTransparency = 1.000
+_3God.Position = UDim2.new(0.236987218, 0, 0.0774731785, 0)
+_3God.Size = UDim2.new(0, 100, 0, 39)
+_3God.Image = "rbxassetid://605740338"
+_3God.ImageColor3 = Color3.fromRGB(39, 65, 125)
+
+TextLabel.Parent = _3God
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0199999996, 0, 0.128205135, 0)
+TextLabel.Size = UDim2.new(0, 100, 0, 29)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "God"
+TextLabel.TextColor3 = Color3.fromRGB(22, 33, 58)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 10.000
+TextLabel.TextWrapped = true
+
+_3Unanchorall.Name = "(3) Unanchor all"
+_3Unanchorall.Parent = ScreenGui
+_3Unanchorall.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_3Unanchorall.BackgroundTransparency = 1.000
+_3Unanchorall.Position = UDim2.new(0.237664863, 0, 0.147794992, 0)
+_3Unanchorall.Size = UDim2.new(0, 100, 0, 39)
+_3Unanchorall.Image = "rbxassetid://605740338"
+_3Unanchorall.ImageColor3 = Color3.fromRGB(39, 65, 125)
+
+TextLabel_2.Parent = _3Unanchorall
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-1.86264515e-09, 0, 0.128205135, 0)
+TextLabel_2.Size = UDim2.new(0, 100, 0, 29)
+TextLabel_2.Font = Enum.Font.Cartoon
+TextLabel_2.Text = "Unanchor all"
+TextLabel_2.TextColor3 = Color3.fromRGB(22, 33, 58)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 10.000
+TextLabel_2.TextWrapped = true
+
+_2Headshake.Name = "(2) Head shake"
+_2Headshake.Parent = ScreenGui
+_2Headshake.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_2Headshake.BackgroundTransparency = 1.000
+_2Headshake.Position = UDim2.new(0.13473022, 0, 0.164481521, 0)
+_2Headshake.Size = UDim2.new(0, 100, 0, 39)
+_2Headshake.Image = "rbxassetid://605740338"
+_2Headshake.ImageColor3 = Color3.fromRGB(39, 65, 125)
+
+TextLabel_3.Parent = _2Headshake
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0, 0, 0.128205135, 0)
+TextLabel_3.Size = UDim2.new(0, 100, 0, 29)
+TextLabel_3.Font = Enum.Font.Cartoon
+TextLabel_3.Text = "Head Shake"
+TextLabel_3.TextColor3 = Color3.fromRGB(22, 33, 58)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 10.000
+TextLabel_3.TextWrapped = true
+
+_2Executor.Name = "(2) Executor"
+_2Executor.Parent = ScreenGui
+_2Executor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_2Executor.BackgroundTransparency = 1.000
+_2Executor.Position = UDim2.new(0.13473022, 0, 0.24076277, 0)
+_2Executor.Size = UDim2.new(0, 100, 0, 39)
+_2Executor.Image = "rbxassetid://605740338"
+_2Executor.ImageColor3 = Color3.fromRGB(39, 65, 125)
+
+TextLabel_4.Parent = _2Executor
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0, 0, 0.102564111, 0)
+TextLabel_4.Size = UDim2.new(0, 100, 0, 29)
+TextLabel_4.Font = Enum.Font.Cartoon
+TextLabel_4.Text = "Executor"
+TextLabel_4.TextColor3 = Color3.fromRGB(22, 33, 58)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 10.000
+TextLabel_4.TextWrapped = true
+
+_2Invisible.Name = "(2) Invisible"
+_2Invisible.Parent = ScreenGui
+_2Invisible.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_2Invisible.BackgroundTransparency = 1.000
+_2Invisible.Position = UDim2.new(0.13473022, 0, 0.314660311, 0)
+_2Invisible.Size = UDim2.new(0, 100, 0, 39)
+_2Invisible.Image = "rbxassetid://605740338"
+_2Invisible.ImageColor3 = Color3.fromRGB(39, 65, 125)
+
+TextLabel_5.Parent = _2Invisible
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0, 0, 0.128205135, 0)
+TextLabel_5.Size = UDim2.new(0, 100, 0, 29)
+TextLabel_5.Font = Enum.Font.Cartoon
+TextLabel_5.Text = "Invisibility"
+TextLabel_5.TextColor3 = Color3.fromRGB(22, 33, 58)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 10.000
+TextLabel_5.TextWrapped = true
+
+_2Flood.Name = "(2) Flood"
+_2Flood.Parent = ScreenGui
+_2Flood.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_2Flood.BackgroundTransparency = 1.000
+_2Flood.Position = UDim2.new(0.13473022, 0, 0.386174023, 0)
+_2Flood.Size = UDim2.new(0, 100, 0, 39)
+_2Flood.Image = "rbxassetid://605740338"
+_2Flood.ImageColor3 = Color3.fromRGB(39, 65, 125)
+
+TextLabel_6.Parent = _2Flood
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0, 0, 0.128205135, 0)
+TextLabel_6.Size = UDim2.new(0, 100, 0, 29)
+TextLabel_6.Font = Enum.Font.Cartoon
+TextLabel_6.Text = "Flood"
+TextLabel_6.TextColor3 = Color3.fromRGB(22, 33, 58)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 10.000
+TextLabel_6.TextWrapped = true
+
+_2Killall.Name = "(2) Kill all"
+_2Killall.Parent = ScreenGui
+_2Killall.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_2Killall.BackgroundTransparency = 1.000
+_2Killall.Position = UDim2.new(0.13473022, 0, 0.0786650181, 0)
+_2Killall.Size = UDim2.new(0, 100, 0, 39)
+_2Killall.Image = "rbxassetid://605740338"
+_2Killall.ImageColor3 = Color3.fromRGB(39, 65, 125)
+
+TextLabel_7.Parent = _2Killall
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.0600000024, 0, 0.128205135, 0)
+TextLabel_7.Size = UDim2.new(0, 100, 0, 29)
+TextLabel_7.Font = Enum.Font.Cartoon
+TextLabel_7.Text = "Kill all"
+TextLabel_7.TextColor3 = Color3.fromRGB(22, 33, 58)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 10.000
+TextLabel_7.TextWrapped = true
+
+_1Heal.Name = "(1)Heal"
+_1Heal.Parent = ScreenGui
+_1Heal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1Heal.BackgroundTransparency = 1.000
+_1Heal.Position = UDim2.new(0.0329641588, 0, 0.221692458, 0)
+_1Heal.Size = UDim2.new(0, 100, 0, 39)
+_1Heal.Image = "rbxassetid://605740338"
+_1Heal.ImageColor3 = Color3.fromRGB(39, 65, 125)
+
+TextLabel_8.Parent = _1Heal
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0, 0, 0.128205135, 0)
+TextLabel_8.Size = UDim2.new(0, 100, 0, 29)
+TextLabel_8.Font = Enum.Font.Cartoon
+TextLabel_8.Text = "Heal"
+TextLabel_8.TextColor3 = Color3.fromRGB(22, 33, 58)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 10.000
+TextLabel_8.TextWrapped = true
+
+_1Jump.Name = "(1)Jump"
+_1Jump.Parent = ScreenGui
+_1Jump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1Jump.BackgroundTransparency = 1.000
+_1Jump.Position = UDim2.new(0.0345266573, 0, 0.147794947, 0)
+_1Jump.Size = UDim2.new(0, 100, 0, 39)
+_1Jump.Image = "rbxassetid://605740338"
+_1Jump.ImageColor3 = Color3.fromRGB(39, 65, 125)
+
+TextLabel_9.Parent = _1Jump
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0, 0, 0.128205135, 0)
+TextLabel_9.Size = UDim2.new(0, 100, 0, 29)
+TextLabel_9.Font = Enum.Font.Cartoon
+TextLabel_9.Text = "Jump Powers"
+TextLabel_9.TextColor3 = Color3.fromRGB(22, 33, 58)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 10.000
+TextLabel_9.TextWrapped = true
+
+_1Speed.Name = "(1) Speed"
+_1Speed.Parent = ScreenGui
+_1Speed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1Speed.BackgroundTransparency = 1.000
+_1Speed.Position = UDim2.new(0.0334849991, 0, 0.0727055818, 0)
+_1Speed.Size = UDim2.new(0, 100, 0, 39)
+_1Speed.Image = "rbxassetid://605740338"
+_1Speed.ImageColor3 = Color3.fromRGB(39, 65, 125)
+
+TextLabel_10.Parent = _1Speed
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Position = UDim2.new(-0.0100000072, 0, 0.128205135, 0)
+TextLabel_10.Size = UDim2.new(0, 100, 0, 29)
+TextLabel_10.Font = Enum.Font.Cartoon
+TextLabel_10.Text = "Speed"
+TextLabel_10.TextColor3 = Color3.fromRGB(22, 33, 58)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 10.000
+TextLabel_10.TextWrapped = true
+
+Circle1.Name = "Circle(1)"
+Circle1.Parent = ScreenGui
+Circle1.BackgroundColor3 = Color3.fromRGB(29, 82, 255)
+Circle1.BackgroundTransparency = 1.000
+Circle1.Position = UDim2.new(0.0808798149, 0, 0.0345649645, 0)
+Circle1.Size = UDim2.new(0, 26, 0, 24)
+Circle1.Image = "rbxassetid://200182847"
+Circle1.ImageColor3 = Color3.fromRGB(39, 65, 125)
+
+Circle2.Name = "Circle(2)"
+Circle2.Parent = ScreenGui
+Circle2.BackgroundColor3 = Color3.fromRGB(29, 82, 255)
+Circle2.BackgroundTransparency = 1.000
+Circle2.Position = UDim2.new(0.17698282, 0, 0.0333730727, 0)
+Circle2.Size = UDim2.new(0, 26, 0, 24)
+Circle2.Image = "rbxassetid://200182847"
+Circle2.ImageColor3 = Color3.fromRGB(39, 65, 125)
+
+Circle3.Name = "Circle(3)"
+Circle3.Parent = ScreenGui
+Circle3.BackgroundColor3 = Color3.fromRGB(29, 82, 255)
+Circle3.BackgroundTransparency = 1.000
+Circle3.Position = UDim2.new(0.28128171, 0, 0.0393325463, 0)
+Circle3.Size = UDim2.new(0, 26, 0, 24)
+Circle3.Image = "rbxassetid://200182847"
+Circle3.ImageColor3 = Color3.fromRGB(39, 65, 125)
+
+_1st.Name = "1st"
+_1st.Parent = ScreenGui
+_1st.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1st.BackgroundTransparency = 21.000
+_1st.Position = UDim2.new(0.0302970856, 0, 0.0250298027, 0)
+_1st.Size = UDim2.new(0, 84, 0, 37)
+_1st.Font = Enum.Font.Cartoon
+_1st.Text = "Player"
+_1st.TextColor3 = Color3.fromRGB(39, 65, 125)
+_1st.TextScaled = true
+_1st.TextSize = 14.000
+_1st.TextWrapped = true
+
+_2nd.Name = "2nd"
+_2nd.Parent = ScreenGui
+_2nd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_2nd.BackgroundTransparency = 21.000
+_2nd.Position = UDim2.new(0.130318671, 0, 0.020977363, 0)
+_2nd.Size = UDim2.new(0, 82, 0, 41)
+_2nd.Font = Enum.Font.Cartoon
+_2nd.Text = "Gameplay"
+_2nd.TextColor3 = Color3.fromRGB(39, 65, 125)
+_2nd.TextScaled = true
+_2nd.TextSize = 14.000
+_2nd.TextWrapped = true
+
+_3rd.Name = "3rd"
+_3rd.Parent = ScreenGui
+_3rd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_3rd.BackgroundTransparency = 21.000
+_3rd.Position = UDim2.new(0.23163572, 0, 0.0262217, 0)
+_3rd.Size = UDim2.new(0, 84, 0, 37)
+_3rd.Font = Enum.Font.Cartoon
+_3rd.Text = "Game"
+_3rd.TextColor3 = Color3.fromRGB(39, 65, 125)
+_3rd.TextScaled = true
+_3rd.TextSize = 14.000
+_3rd.TextWrapped = true
+
+_3Terrain.Name = "(3) Terrain"
+_3Terrain.Parent = ScreenGui
+_3Terrain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_3Terrain.BackgroundTransparency = 1.000
+_3Terrain.Position = UDim2.new(0.237651259, 0, 0.232419536, 0)
+_3Terrain.Size = UDim2.new(0, 100, 0, 39)
+_3Terrain.Image = "rbxassetid://605740338"
+_3Terrain.ImageColor3 = Color3.fromRGB(39, 65, 125)
+
+TextLabel_11.Parent = _3Terrain
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(-0.00999999978, 0, 0.128205135, 0)
+TextLabel_11.Size = UDim2.new(0, 100, 0, 29)
+TextLabel_11.Font = Enum.Font.Cartoon
+TextLabel_11.Text = "Clear Terrain"
+TextLabel_11.TextColor3 = Color3.fromRGB(22, 33, 58)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 10.000
+TextLabel_11.TextWrapped = true
+
+_3Clearworkspace.Name = "(3) Clear workspace"
+_3Clearworkspace.Parent = ScreenGui
+_3Clearworkspace.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_3Clearworkspace.BackgroundTransparency = 1.000
+_3Clearworkspace.Position = UDim2.new(0.236752748, 0, 0.314660281, 0)
+_3Clearworkspace.Size = UDim2.new(0, 100, 0, 39)
+_3Clearworkspace.Image = "rbxassetid://605740338"
+_3Clearworkspace.ImageColor3 = Color3.fromRGB(39, 65, 125)
+
+TextLabel_12.Parent = _3Clearworkspace
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(0, 0, 0.128205135, 0)
+TextLabel_12.Size = UDim2.new(0, 100, 0, 29)
+TextLabel_12.Font = Enum.Font.Cartoon
+TextLabel_12.Text = "Clear Workspace"
+TextLabel_12.TextColor3 = Color3.fromRGB(22, 33, 58)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 10.000
+TextLabel_12.TextWrapped = true
+
+-- Scripts:
+
+local function OTLZIJB_fake_script() -- _3God.LocalScript 
+	local script = Instance.new('LocalScript', _3God)
+
+	function click()
+	if script.Parent.Text == "Off" then
+		game.Players.LocalPlayer.Character.Humanoid.MaxHealth = math.huge
+		game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+		script.Parent.Text = "On"
+		else
+		game.Players.LocalPlayer.Character.Humanoid.MaxHealth = 100
+		game.Players.LocalPlayer.Character.Humanoid.Health = 100
+		script.Parent.Text = "Off"
+	end
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+end
+coroutine.wrap(OTLZIJB_fake_script)()
+local function QMCZ_fake_script() -- _3Unanchorall.LocalScript 
+	local script = Instance.new('LocalScript', _3Unanchorall)
+
+	function click()
+	function exPro(root)
+	for _, v in pairs(root:GetChildren()) do
+	if v:IsA("BasePart") then
+	v.Material = "Plastic"
+	v.Transparency = 0
+	v.Anchored = false
+	v.Locked = false
+	end
+	exPro(v)
+	end
+	end
+	function asdf(root)
+	for _, v in pairs(root:GetChildren()) do
+	asdf(v)
+	end
+	end
+	exPro(game.Workspace)
+	asdf(game.Workspace)
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+end
+coroutine.wrap(QMCZ_fake_script)()
+local function FVHGON_fake_script() -- _2Headshake.LocalScript 
+	local script = Instance.new('LocalScript', _2Headshake)
+
+	function click()
+	for X = 1, math.huge, 0.2 do 
+	wait() 
+	game.Workspace[game.Players.LocalPlayer.Name].Torso.Neck.C0 = CFrame.new(math.sin(X) / 1,1.5,0) 
+	game.Workspace[game.Players.LocalPlayer.Name].Torso.Neck.C1 = CFrame.new(0,0,0) 
+	end 
+	for X = 1, math.huge, 0.1 do 
+	wait() 
+	game.Workspace[game.Players.LocalPlayer.Name].Torso.Neck.C0 = CFrame.new(0,1.5,0) * CFrame.fromAxisAngle(Vector3.new(0,1,0), X) 
+	game.Workspace[game.Players.LocalPlayer.Name].Torso.Neck.C1 = CFrame.new(0,0,0) 
+	end 
+	for _,c in pairs(game.Players:GetChildren()) do
+		c.Character.Head.Mesh.Scale = Vector3.new(100, 100, 100)
+	end
+	for _,c in pairs(game.Players:GetChildren()) do
+		c.Character.Head.Mesh.Scale = Vector3.new(1.25, 1.25, 1.25)
+	end
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+end
+coroutine.wrap(FVHGON_fake_script)()
+local function MYWEK_fake_script() -- _2Executor.LocalScript 
+	local script = Instance.new('LocalScript', _2Executor)
+
+	function click()
+	openkey = "y"
+	
+	closing=false
+	function doclose() if not closing and not opening then closing=true
+	if exe.Rotation == 0 then
+	for i=0,-360,-20 do
+	exe.Rotation=i wait()
+	end
+	exe.Rotation = 0
+	for i=1,20 do
+	exe.Position = exe.Position + UDim2.new(-0.1,0,0,0) wait()
+	end
+	exe.Visible=false show.Visible=true
+	exe.Position = UDim2.new(0.5, -291, 0.5, -157)
+	for _,mpops in pairs(CodeExecutorLocal.Parent:GetChildren()) do
+	if mpops:IsA("ScreenGui") and mpops.Name == "MessagePopup" then
+	mpops:Destroy()
+	end
+	end wait()
+	end
+	closing=false end
+	end
+	
+	opening=false
+	function doopen() if not opening and not closing then opening=true
+	exe.Visible = true
+	show.Visible=false
+	for i=0,360,20 do
+	exe.Rotation = i wait()
+	end
+	exe.Rotation = 0
+	if not viewed then viewed=true wait(3)
+	for i=1,55 do
+	V3Logo.Position = V3Logo.Position + UDim2.new(0,0,-0.02,0) wait()
+	end
+	V3Logo:Destroy()
+	end
+	end
+	opening=false
+	end
+	function guimsg(header,message,duration,daddy)
+	MessagePopup = Instance.new("ScreenGui", daddy)
+	MessagePopup.Name = "MessagePopup"
+	
+	bg = Instance.new("Frame", MessagePopup)
+	bg.Name = "bg"
+	bg.Position = UDim2.new(0.5, -200, 0.20000000298023, 0)
+	bg.Size = UDim2.new(0, 400, 0, 140)
+	bg.BackgroundColor3 = Color3.new(0, 0, 0)
+	bg.BorderSizePixel = 0
+	bg.Style = Enum.FrameStyle.RobloxRound
+	bg.ZIndex = 9
+	
+	title = Instance.new("TextBox", bg)
+	title.Name = "title"
+	title.Size = UDim2.new(1, 0, 0, 50)
+	title.BackgroundColor3 = Color3.new(0.66666668653488, 0, 0)
+	title.BackgroundTransparency = 1
+	title.BorderSizePixel = 0
+	title.Text = header
+	title.Font = Enum.Font.SourceSansBold
+	title.FontSize = Enum.FontSize.Size48
+	title.TextScaled = true
+	title.TextWrapped = true
+	title.TextColor3 = Color3.new(0.66666668653488, 0, 0)
+	title.ZIndex = 10
+	
+	desc = Instance.new("TextBox", bg)
+	desc.Name = "desc"
+	desc.Position = UDim2.new(0, 0, 0, 60)
+	desc.Size = UDim2.new(1, 0, 0, 50)
+	desc.BackgroundColor3 = Color3.new(0.66666668653488, 0, 0)
+	desc.BackgroundTransparency = 1
+	desc.BorderSizePixel = 0
+	desc.Text = message
+	desc.Font = Enum.Font.SourceSansBold
+	desc.FontSize = Enum.FontSize.Size36
+	desc.TextScaled = true
+	desc.TextWrapped = true
+	desc.TextColor3 = Color3.new(1, 1, 1)
+	desc.ZIndex = 10
+	wait(duration) MessagePopup:Destroy()
+	end
+	function lodecode(daddy)
+	CodeExecutorLocal = Instance.new("ScreenGui", daddy)
+	CodeExecutorLocal.Name = "CodeExecutorLocal"
+	
+	exe = Instance.new("Frame", CodeExecutorLocal)
+	exe.Name = "exe"
+	exe.Position = UDim2.new(0.5, -291, 0.5, -157)
+	exe.Size = UDim2.new(0, 600, 0, 300)
+	exe.BackgroundColor3 = Color3.new(0, 1, 0)
+	exe.BackgroundTransparency = 0.5
+	exe.BorderSizePixel = 0
+	exe.Visible = false
+	exe.Active = true
+	exe.ZIndex = 7
+	exe.Draggable = true
+	
+	run = Instance.new("TextButton", exe)
+	run.Name = "run"
+	run.Position = UDim2.new(0, 0, 1, -30)
+	run.Size = UDim2.new(0, 140, 0, 30)
+	run.BackgroundColor3 = Color3.new(1, 1, 1)
+	run.BorderSizePixel = 0
+	run.Text = "Execute"
+	run.Font = Enum.Font.ArialBold
+	run.FontSize = Enum.FontSize.Size24
+	run.TextColor3 = Color3.new(0, 1, 0)
+	run.ZIndex = 10
+	
+	clear = Instance.new("TextButton", exe)
+	clear.Name = "clear"
+	clear.Position = UDim2.new(0, 460, 1, -30)
+	clear.Size = UDim2.new(0, 140, 0, 30)
+	clear.BackgroundColor3 = Color3.new(1, 1, 1)
+	clear.BorderSizePixel = 0
+	clear.Text = "Clear"
+	clear.Font = Enum.Font.ArialBold
+	clear.FontSize = Enum.FontSize.Size24
+	clear.TextWrapped = true
+	clear.TextColor3 = Color3.new(1, 0, 0)
+	clear.ZIndex = 10
+	
+	code = Instance.new("TextBox", exe)
+	code.Name = "code"
+	code.Size = UDim2.new(1, 0, 0.89999997615814, 0)
+	code.BackgroundColor3 = Color3.new(0, 0, 0)
+	code.BorderSizePixel = 0
+	code.Text = "print(\"Hello Local World!\")"
+	code.FontSize = Enum.FontSize.Size11
+	code.TextWrapped = true
+	code.TextXAlignment = Enum.TextXAlignment.Left
+	code.TextYAlignment = Enum.TextYAlignment.Top
+	code.TextColor3 = Color3.new(0, 1, 0)
+	code.ClearTextOnFocus = false
+	code.ZIndex = 8
+	
+	hide = Instance.new("TextButton", exe)
+	hide.Name = "hide"
+	hide.Position = UDim2.new(0.5, -70, 1, -30)
+	hide.Size = UDim2.new(0, 140, 0, 30)
+	hide.BackgroundColor3 = Color3.new(1, 1, 1)
+	hide.BorderSizePixel = 0
+	hide.Text = "Hide"
+	hide.Font = Enum.Font.ArialBold
+	hide.FontSize = Enum.FontSize.Size24
+	hide.TextColor3 = Color3.new(0, 0, 0)
+	hide.ZIndex = 10
+	
+	V3Logo = Instance.new("ImageLabel", exe)
+	V3Logo.Name = "V3Logo"
+	V3Logo.Position = UDim2.new(0.10000000149012, 0, 0.20000000298023, 0)
+	V3Logo.Size = UDim2.new(0.80000001192093, 0, 0.30000001192093, 0)
+	V3Logo.BackgroundColor3 = Color3.new(1, 1, 1)
+	V3Logo.Image = "rbxassetid://127743025"
+	V3Logo.ZIndex = 10
+	V3Logo.BackgroundTransparency = 1
+	V3Logo.BorderSizePixel = 0
+	
+	show = Instance.new("TextButton", CodeExecutorLocal)
+	show.Name = "show"
+	show.Position = UDim2.new(-0.0099999997764826, 0, 1, -30)
+	show.Size = UDim2.new(0, 140, 0, 30)
+	show.BackgroundColor3 = Color3.new(1, 1, 1)
+	show.BorderSizePixel = 0
+	show.Text = "Show "
+	show.Font = Enum.Font.ArialBold
+	show.FontSize = Enum.FontSize.Size24
+	show.TextXAlignment = Enum.TextXAlignment.Right
+	show.TextColor3 = Color3.new(0, 1, 0)
+	show.ZIndex = 10
+	
+	append = Instance.new("TextButton", exe)
+	append.Name = "append"
+	append.Position = UDim2.new(0.5, -70, 1, 0)
+	append.Size = UDim2.new(0, 140, 0, 30)
+	append.BackgroundColor3 = Color3.new(1, 1, 1)
+	append.BorderColor3 = Color3.new(0.10588235408068, 0.16470588743687, 0.20784313976765)
+	append.Text = "Append Code"
+	append.Font = Enum.Font.ArialBold
+	append.FontSize = Enum.FontSize.Size24
+	append.TextColor3 = Color3.new(0, 0, 0)
+	append.ZIndex = 10
+	
+	nl = Instance.new("TextButton", exe)
+	nl.Name = "nl"
+	nl.Position = UDim2.new(0.5, -70, 1, 30)
+	nl.Size = UDim2.new(0, 140, 0, 30)
+	nl.BackgroundColor3 = Color3.new(1, 1, 1)
+	nl.Text = "New Line"
+	nl.Font = Enum.Font.ArialBold
+	nl.FontSize = Enum.FontSize.Size24
+	nl.TextColor3 = Color3.new(0, 0, 0)
+	nl.ZIndex = 10
+	
+	end
+	
+	if pcall(function()lodecode(game.CoreGui) end) then hascore=true else
+	pcall(function()lodecode(game.Players.LocalPlayer.PlayerGui) end) hascore=false
+	end
+	wait()
+	savecode = Instance.new("StringValue") savecode.Parent = exe savecode.Name="AppendedCode" savecode.Value=""
+	
+	appe=false
+	append.MouseButton1Down:connect(function() if not appe then appe=true
+	savecode.Value = savecode.Value..code.Text wait() append.Text = "Appended" code.Text="" wait(3) append.Text = "Append Code" appe=false end
+	end)
+	
+	nl.MouseButton1Down:connect(function() code.Text = code.Text.."\n" end)
+	
+	local cl = true viewed=false
+	show.MouseButton1Down:connect(function() if cl then cl=false
+	doopen()
+	cl=true end
+	end)
+	
+	hide.MouseEnter:connect(function()
+	hide.BackgroundColor3 = Color3.new(1,0,0)
+	end)
+	hide.MouseLeave:connect(function()
+	hide.BackgroundColor3 = Color3.new(1,1,1)
+	end)
+	run.MouseEnter:connect(function()
+	run.BackgroundColor3 = Color3.new(0,1,0)
+	run.TextColor3 = Color3.new(1,1,1)
+	end)
+	run.MouseLeave:connect(function()
+	run.BackgroundColor3 = Color3.new(1,1,1)
+	run.TextColor3 = Color3.new(0,1,0)
+	end)
+	clear.MouseEnter:connect(function()
+	clear.BackgroundColor3 = Color3.new(1,0,0)
+	clear.TextColor3 = Color3.new(1,1,1)
+	end)
+	clear.MouseLeave:connect(function()
+	clear.BackgroundColor3 = Color3.new(1,1,1)
+	clear.TextColor3 = Color3.new(1,0,0)
+	end)
+	clear.MouseButton1Down:connect(function()
+	code.Text = "" savecode.Value=""
+	end)
+	show.MouseEnter:connect(function()
+	show.BackgroundColor3 = Color3.new(0,1,0)
+	show.TextColor3 = Color3.new(1,1,1)
+	end)
+	show.MouseLeave:connect(function()
+	show.BackgroundColor3 = Color3.new(1,1,1)
+	show.TextColor3 = Color3.new(0,1,0)
+	end)
+	
+	cl2=true
+	hide.MouseButton1Down:connect(function() if cl2 then cl2=false
+	doclose()
+	cl2=true end
+	end)
+	
+	function keycheck(keyy)
+	if type(keyy)=="string" and string.byte(string.lower(keyy)) then
+	return string.lower(keyy)
+	else return false end
+	end
+	
+	
+	game.Players.LocalPlayer:GetMouse().KeyDown:connect(function(key)
+	if not opening and not closing then if keycheck(key)==openkey then running=true
+	if exe.Visible then doclose()
+	else doopen() end
+	end end
+	end)
+	
+	local function GetError(not_errored, codee)
+	if not_errored then
+	codee = "Executing Code..."
+	end
+	for _,mpops in pairs(CodeExecutorLocal.Parent:GetChildren()) do
+	if mpops:IsA("ScreenGui") and mpops.Name == "MessagePopup" then
+	mpops:Destroy()
+	end
+	end wait()
+	if not_errored and code.Text:match("%S+") and savecode.Value:match("%S") then
+	guimsg('Vermillion: ',codee,3,CodeExecutorLocal.Parent)
+	elseif not code.Text:match("%S+") and not savecode.Value:match("%S+") then
+	guimsg('Error:',"Did not enter code.",3,CodeExecutorLocal.Parent)
+	else
+	guimsg('Error:',codee,3,CodeExecutorLocal.Parent)
+	end
+	end
+	
+	deb = true
+	run.MouseButton1Down:connect(function()
+	if deb then deb=false
+	coroutine.resume(coroutine.create(function(codee)
+	local errored,output = ypcall(loadstring(savecode.Value..code.Text))
+	GetError(errored,output)
+	errored,output = nil
+	end),codee)
+	wait(1)
+	deb=true end
+	end)
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+end
+coroutine.wrap(MYWEK_fake_script)()
+local function LOXAACT_fake_script() -- _2Invisible.LocalScript 
+	local script = Instance.new('LocalScript', _2Invisible)
+
+	function click()
+	if script.Parent.Text == "Off" then
+	game.Players.LocalPlayer.Character.Head.Transparency = 1
+	game.Players.LocalPlayer.Character.Head.face.Transparency = 1
+	game.Players.LocalPlayer.Character.Torso.Transparency = 1
+	game.Players.LocalPlayer.Character["Right Arm"].Transparency = 1
+	game.Players.LocalPlayer.Character["Left Arm"].Transparency = 1
+	game.Players.LocalPlayer.Character["Right Leg"].Transparency = 1
+	game.Players.LocalPlayer.Character["Left Leg"].Transparency = 1
+	script.Parent.Text = "On"
+	else
+	game.Players.LocalPlayer.Character.Head.Transparency = 0
+	game.Players.LocalPlayer.Character.Head.face.Transparency = 0
+	game.Players.LocalPlayer.Character.Torso.Transparency = 0
+	game.Players.LocalPlayer.Character["Right Arm"].Transparency = 0
+	game.Players.LocalPlayer.Character["Left Arm"].Transparency = 0
+	game.Players.LocalPlayer.Character["Right Leg"].Transparency = 0
+	game.Players.LocalPlayer.Character["Left Leg"].Transparency = 0
+	script.Parent.Text = "Off"
+	end
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+end
+coroutine.wrap(LOXAACT_fake_script)()
+local function CNGH_fake_script() -- _2Flood.LocalScript 
+	local script = Instance.new('LocalScript', _2Flood)
+
+	function click()
+	game.Workspace.Terrain:SetCells(Region3int16.new(Vector3int16.new(-100,-100,-100), Vector3int16.new(100,100,100)), 17, "Solid", "X")	
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+end
+coroutine.wrap(CNGH_fake_script)()
+local function VPMRLZ_fake_script() -- _2Killall.LocalScript 
+	local script = Instance.new('LocalScript', _2Killall)
+
+	function click()
+	for i,v in pairs(game.Players:GetChildren()) do
+	v.Character:BreakJoints()
+	end
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+end
+coroutine.wrap(VPMRLZ_fake_script)()
+local function HIMO_fake_script() -- _1Heal.LocalScript 
+	local script = Instance.new('LocalScript', _1Heal)
+
+	function click()
+	game.Players.LocalPlayer.Character.Humanoid.Health = game.Players.LocalPlayer.Character.Humanoid.MaxHealth
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+end
+coroutine.wrap(HIMO_fake_script)()
+local function YQPFC_fake_script() -- _1Jump.LocalScript 
+	local script = Instance.new('LocalScript', _1Jump)
+
+	script.Parent.MouseButton1Click:connect(function()
+		print ("Workspace Gravity Set to Very Low")
+		game.Workspace.Gravity = 40
+	end)
+	
+	
+end
+coroutine.wrap(YQPFC_fake_script)()
+local function XSRXL_fake_script() -- _1Speed.LocalScript 
+	local script = Instance.new('LocalScript', _1Speed)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 300
+		
+	end)
+end
+coroutine.wrap(XSRXL_fake_script)()
+local function MEST_fake_script() -- _3Terrain.LocalScript 
+	local script = Instance.new('LocalScript', _3Terrain)
+
+	function click()
+	game.Workspace.Terrain:Clear()
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+end
+coroutine.wrap(MEST_fake_script)()
+local function MNXAKN_fake_script() -- _3Clearworkspace.LocalScript 
+	local script = Instance.new('LocalScript', _3Clearworkspace)
+
+	function click()
+	game.Workspace:ClearAllChildren()
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+end
+coroutine.wrap(MNXAKN_fake_script)()
