@@ -1,9 +1,3 @@
-
-
-Share
-
-
-You said:
 local ESP = {
 	Enabled = false, 
 	Color = Color3.fromRGB(255, 255, 255), 
